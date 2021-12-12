@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+<!--Placeholder for head-->
+{% block head %}
+<title>SAP</title>
+
+{% endblock %}
+
+<!--Placeholder for body-->
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 mb-3">
+            <form action="/display" method="POST">
+                <div class="form-group">
+                    <h3>Search the Employee Details : </h3>
+
+                    <label>First Name</label>
+                    <input type="text" class="form-control" name="firstname" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" name="lastname" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+     </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+<!--Placeholder for head-->
+{% block head %}
+<title>SAP</title>
+
+{% endblock %}
+
+<!--Placeholder for body-->
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 mb-3">
+            <form action="" method="POST">
+                <div class="form-group">
+                    <h3>Store the New Employee Details : </h3>
+
+                    <label>First Name</label>
+                    <input type="text" class="form-control" name="firstname" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" name="lastname" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Address</label>
+                    <input type="text" class="form-control" name="address" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="date" class="form-control" name="date" max={{today}} required>
+                </div>
+
+                <div class="form-group">
+                    <label>Cell</label>
+                    <input type="text" class="form-control" name="cell" pattern="[1-9]{1}[0-9]{9}" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Work</label>
+                    <input type="text" class="form-control" pattern="[1-9]{1}[0-9]{9}" name="work">
+                </div>
+
+                <div class="form-group">
+                    <label>Home</label>
+                    <input type="text" class="form-control" pattern="[1-9]{1}[0-9]{9}" name="home">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+     </div>
+</div>
+
+{% endblock %}

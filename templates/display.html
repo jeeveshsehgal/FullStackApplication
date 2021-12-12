@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+<!--Placeholder for head-->
+{% block head %}
+
+{% endblock %}
+
+<!--Placeholder for body-->
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="text-center">
+            <h3>The Employee Details</h3>
+        </div>
+        </br>
+        <div class="table-responsive">
+            <div class="form-group col-md-12">
+                {% if data | length > 0 %}
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Employee ID</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Date of Joining</th>
+                            <th scope="col">Cell</th>
+                            <th scope="col">Work</th>
+                            <th scope="col">Home</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>{{data[0]}}</td>
+                            <td>{{data[1]}}</td>
+                            <td>{{data[2]}}</td>
+                            <td>{{data[3]}}</td>
+                            <td>{{data[4]}}</td>
+                            <td>{{data[5]}}</td>
+                            <td>{{data[6]}}</td>
+                            <td>{{data[7]}}</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                {% else %}
+                <h4>No data available..</h4>
+                {% endif %}
+            </div>
+        </div>
+        <hr />
+
+    </div>
+    {% endblock %}

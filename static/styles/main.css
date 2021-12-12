@@ -1,0 +1,31 @@
+
+.footer{
+  left: 0;
+  width: 100%;
+  background-color: #343A40;
+  text-align:center;
+  height: 4em;
+  margin-top: 10px;
+  bottom:0;
+  position: fixed;
+}
+
+#slide{
+  text-align:center;
+  background-color: lightskyblue;
+}
+
+.carousel-item{
+  padding-top:5em;
+  padding-bottom:5em;
+  color: white;
+}
+h3{
+  color:#343A40;
+  margin-bottom: 2%;
+}
+
+.container{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
